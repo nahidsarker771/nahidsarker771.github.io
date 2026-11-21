@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nahid — student, vibe coder, serial app shipper</title>
+<meta name="description" content="Nahid is a student and vibe coder building small, offline-first Android and web apps: KanaPet, RecallFlow, Download Chan and Life Quest. Free, no ads, no accounts.">
+<link rel="canonical" href="https://nahidsarker771.github.io/">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#fbf7ec">
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="Nahid">
+<meta property="og:title" content="Nahid — student, vibe coder, serial app shipper">
+<meta property="og:description" content="Student by day, vibe coder by night. Small offline-first apps that do one thing well.">
+<meta property="og:url" content="https://nahidsarker771.github.io/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Nahid — student, vibe coder, serial app shipper">
+<meta name="twitter:description" content="Student by day, vibe coder by night. Small offline-first apps that do one thing well.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%23111'/%3E%3Ctext x='50' y='68' font-size='52' font-family='Arial Black,Arial' font-weight='900' fill='%23d8ff3e' text-anchor='middle'%3EN%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Nahid","alternateName":"nahidsarker771","url":"https://nahidsarker771.github.io/","sameAs":["https://github.com/nahidsarker771"],"description":"Student and vibe coder building offline-first Android and web apps.","knowsAbout":["Android development","Kotlin","Jetpack Compose","JavaScript","Progressive Web Apps","Offline-first software"]}
+</script>
+<style>
+:root{
+  --paper:#fbf7ec; --ink:#121212; --lime:#d8ff3e; --blue:#5b5bf6;
+  --pink:#ff90b3; --orange:#ff7a45; --violet:#b7a6ff; --sky:#a9e7ff;
+  --line:2px solid var(--ink); --shadow:6px 6px 0 var(--ink);
+  --radius:18px; --max:1140px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-1;opacity:.5;pointer-events:none;background-image:radial-gradient(#12121212 1px,transparent 1px);background-size:18px 18px}
+a{color:inherit}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 24px}
+::selection{background:var(--lime);color:var(--ink)}
+
+.ticker{background:var(--ink);color:var(--paper);font-weight:800;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;overflow:hidden;white-space:nowrap;padding:8px 0}
+.ticker-track{display:inline-flex;gap:26px;animation:slide 26s linear infinite;padding-left:26px}
+.ticker span{display:inline-flex;gap:26px;align-items:center}
+.ticker i{color:var(--lime);font-style:normal}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+header{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(14px);border-bottom:var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:18px;height:68px}
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:900;letter-spacing:-.03em;font-size:18px}
+.logo .badge{width:36px;height:36px;border:var(--line);border-radius:11px;background:var(--lime);display:grid;place-items:center;box-shadow:3px 3px 0 var(--ink);font-size:15px}
+.nav-links{display:flex;gap:24px;font-weight:750;font-size:14px}
+.nav-links a{text-decoration:none;border-bottom:2px solid transparent;padding-bottom:2px}
+.nav-links a:hover{border-color:var(--ink)}
+.nav-cta{border:var(--line);border-radius:99px;padding:8px 15px;font-weight:800;font-size:13px;text-decoration:none;background:var(--lime);box-shadow:3px 3px 0 var(--ink);transition:transform .15s}
+.nav-cta:hover{transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--ink)}
+
+.hero{padding:58px 0 30px;position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.sticker{display:inline-block;background:var(--pink);border:var(--line);border-radius:10px;padding:5px 12px;font-weight:850;font-size:12px;letter-spacing:.1em;text-transform:uppercase;transform:rotate(-2deg);box-shadow:3px 3px 0 var(--ink);margin-bottom:20px}
+h1{font-size:clamp(2.6rem,6.6vw,4.7rem);line-height:.98;letter-spacing:-.055em;margin:0 0 22px;font-weight:950}
+h1 .hl{background:linear-gradient(transparent 58%,var(--lime) 58%);padding:0 2px;white-space:nowrap}
+h1 .squig{color:var(--blue);position:relative;white-space:nowrap}
+h1 .squig::after{content:"";position:absolute;left:0;right:0;bottom:-7px;height:9px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='10' viewBox='0 0 120 10'%3E%3Cpath d='M0 5 Q 15 0 30 5 T 60 5 T 90 5 T 120 5' fill='none' stroke='%23ff7a45' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E") repeat-x;background-size:auto 9px}
+.lede{font-size:clamp(1.02rem,2vw,1.2rem);max-width:47ch;margin:0 0 26px;font-weight:520}
+.lede strong{background:var(--sky);padding:1px 4px;border-radius:4px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:850;font-size:15px;border:var(--line);border-radius:13px;padding:13px 20px;transition:transform .15s,box-shadow .15s}
+.btn-dark{background:var(--ink);color:var(--paper);box-shadow:5px 5px 0 var(--blue)}
+.btn-lime{background:var(--lime);color:var(--ink);box-shadow:5px 5px 0 var(--ink)}
+.btn:hover{transform:translate(-2px,-2px)}
+.btn-dark:hover{box-shadow:7px 7px 0 var(--blue)}
+.btn-lime:hover{box-shadow:7px 7px 0 var(--ink)}
+
+.id-card{position:relative;background:#fff;border:var(--line);border-radius:20px;box-shadow:10px 10px 0 var(--ink);padding:20px;transform:rotate(2.5deg);max-width:340px;margin:0 auto}
+.id-top{display:flex;justify-content:space-between;align-items:center;font-size:10px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;border-bottom:2px dashed #12121255;padding-bottom:10px;margin-bottom:14px}
+.id-top span:last-child{background:var(--lime);border:1.5px solid var(--ink);border-radius:5px;padding:2px 6px;letter-spacing:.08em}
+.id-main{display:flex;gap:14px;align-items:center;margin-bottom:14px}
+.avatar{width:64px;height:64px;flex:0 0 64px;border:var(--line);border-radius:14px;background:
+  radial-gradient(circle at 50% 34%,#ffe0b8 0 11px,transparent 12px),
+  radial-gradient(circle at 34% 30%,#121212 0 2.4px,transparent 2.6px),
+  radial-gradient(circle at 66% 30%,#121212 0 2.4px,transparent 2.6px),
+  linear-gradient(#121212,#121212) 50% 62%/22px 3px no-repeat,
+  linear-gradient(160deg,var(--violet),var(--blue));display:grid;place-items:end center;font-size:9px;font-weight:900;color:#fff;padding-bottom:4px}
+.id-name{font-weight:950;font-size:22px;letter-spacing:-.03em;line-height:1.05}
+.id-role{font-size:11px;font-weight:750;color:#5a5a5a;margin-top:3px}
+.id-rows{display:flex;flex-direction:column;gap:7px;font-size:12px;border-top:2px dashed #12121255;padding-top:12px}
+.id-row{display:flex;justify-content:space-between;gap:10px}
+.id-row span:first-child{font-weight:800;color:#6a6a6a;text-transform:uppercase;letter-spacing:.08em;font-size:9.5px}
+.id-row span:last-child{font-weight:800;text-align:right}
+.barcode{margin-top:14px;height:26px;background:repeating-linear-gradient(90deg,var(--ink) 0 2px,transparent 2px 4px,var(--ink) 4px 5px,transparent 5px 9px);border-radius:2px;opacity:.85}
+.sticker-float{position:absolute;border:var(--line);border-radius:99px;padding:7px 12px;font-weight:900;font-size:11.5px;box-shadow:3px 3px 0 var(--ink);background:var(--lime);transform:rotate(-8deg);z-index:2}
+.sf1{top:-16px;right:-10px}
+.sf2{bottom:-16px;left:-18px;background:var(--pink);transform:rotate(6deg)}
+
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:38px 0 8px}
+.stat{background:#fff;border:var(--line);border-radius:14px;padding:14px 16px;box-shadow:4px 4px 0 var(--ink)}
+.stat b{display:block;font-size:26px;letter-spacing:-.05em;line-height:1.1}
+.stat span{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.07em;color:#666}
+
+section{padding:54px 0}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:26px}
+.kicker{display:inline-block;font-size:11px;font-weight:900;letter-spacing:.16em;text-transform:uppercase;background:var(--ink);color:var(--paper);padding:4px 9px;border-radius:5px;margin-bottom:10px}
+h2{font-size:clamp(1.85rem,4.4vw,3rem);letter-spacing:-.045em;line-height:1;margin:0;font-weight:950}
+.sec-head p{margin:8px 0 0;color:#4d4d4d;font-size:14.5px;max-width:54ch}
+.sec-head .count{font-weight:900;font-size:12px;border:var(--line);border-radius:99px;padding:5px 12px;background:var(--lime);box-shadow:3px 3px 0 var(--ink);white-space:nowrap}
+
+.projects{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.project{border:var(--line);border-radius:20px;padding:24px;background:#fff;box-shadow:7px 7px 0 var(--ink);display:flex;flex-direction:column;position:relative;overflow:hidden;transition:transform .18s}
+.project:hover{transform:translate(-3px,-3px)}
+.project::before{content:"";position:absolute;inset:0 0 auto 0;height:8px;background:var(--c)}
+.p-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:14px}
+.p-ico{width:54px;height:54px;border:var(--line);border-radius:15px;background:var(--c);display:grid;place-items:center;font-size:26px;box-shadow:3px 3px 0 var(--ink)}
+.p-num{font-size:11px;font-weight:900;letter-spacing:.1em;color:#777}
+.project h3{margin:0 0 3px;font-size:24px;letter-spacing:-.03em;line-height:1.1}
+.p-tag{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:#666;margin-bottom:10px}
+.project p{margin:0 0 15px;font-size:14px;color:#3c3c3c;flex:1}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
+.tags span{font-size:10.5px;font-weight:800;border:1.5px solid var(--ink);border-radius:99px;padding:2px 8px;background:var(--paper)}
+.p-links{display:flex;gap:8px;flex-wrap:wrap}
+.p-link{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:850;text-decoration:none;border:var(--line);border-radius:9px;padding:7px 11px;background:var(--paper);transition:background .15s}
+.p-link:hover{background:var(--lime)}
+.p-link.primary{background:var(--ink);color:var(--paper)}
+.p-link.primary:hover{background:var(--blue)}
+
+.lore{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.note{background:#fff;border:var(--line);border-radius:14px;padding:20px;box-shadow:5px 5px 0 var(--ink);position:relative}
+.note:nth-child(2){transform:rotate(-1.2deg);background:#fffdf2}
+.note:nth-child(3){transform:rotate(1.1deg)}
+.note:nth-child(4){transform:rotate(1.4deg);background:#fff4fa}
+.note:nth-child(5){transform:rotate(-1.6deg);background:#f4fbff}
+.note .emoji{font-size:26px;display:block;margin-bottom:8px}
+.note h3{margin:0 0 6px;font-size:16px;letter-spacing:-.01em}
+.note p{margin:0;font-size:13.5px;color:#444;line-height:1.5}
+.note .tape{position:absolute;top:-10px;left:22px;width:56px;height:16px;background:color-mix(in srgb,var(--lime) 80%,#fff);border:1px solid #12121244;transform:rotate(-3deg)}
+
+.marquee{border-top:var(--line);border-bottom:var(--line);background:var(--lime);overflow:hidden;white-space:nowrap;padding:14px 0;margin:6px 0}
+.marquee-track{display:inline-flex;gap:14px;animation:slide 30s linear infinite;padding-left:14px}
+.chip{display:inline-block;border:var(--line);border-radius:99px;background:var(--paper);padding:6px 14px;font-weight:850;font-size:13px;letter-spacing:-.01em}
+.chip.dark{background:var(--ink);color:var(--lime)}
+
+.cta-block{background:var(--ink);color:var(--paper);border:var(--line);border-radius:24px;padding:clamp(26px,5vw,48px);display:flex;justify-content:space-between;align-items:center;gap:28px;flex-wrap:wrap;position:relative;overflow:hidden}
+.cta-block::after{content:"</>";position:absolute;right:-10px;bottom:-42px;font-size:150px;font-weight:950;color:#ffffff10;letter-spacing:-.1em;pointer-events:none}
+.cta-block h2{color:var(--paper);max-width:16ch}
+.cta-block h2 span{color:var(--lime)}
+.cta-block p{margin:10px 0 0;color:#bdbdbd;font-size:14.5px;max-width:38ch}
+
+footer{border-top:var(--line);padding:28px 0 40px;margin-top:20px}
+.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:center;font-size:13px;font-weight:650}
+.foot-links{display:flex;gap:16px;flex-wrap:wrap}
+.foot a{text-decoration:none;border-bottom:2px solid transparent}
+.foot a:hover{border-color:var(--ink)}
+.small{font-size:11.5px;color:#6a6a6a;margin-top:10px}
+
+@media (max-width:960px){
+  .hero-grid{grid-template-columns:1fr;gap:40px}
+  .id-card{transform:rotate(0);max-width:420px}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .lore{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:720px){
+  .nav-links{display:none}
+  .wrap{padding:0 18px}
+  .hero{padding-top:38px}
+  section{padding:40px 0}
+  .projects{grid-template-columns:1fr}
+  .lore{grid-template-columns:1fr}
+  .stats{gap:10px}
+  .stat b{font-size:22px}
+  .cta-block{padding:26px 22px}
+  .cta-block h2{font-size:2rem}
+  h1{font-size:clamp(2.35rem,10vw,3.2rem)}
+  .sf1{right:0}
+  .sf2{left:0}
+}
+@media (max-width:380px){
+  .stats{grid-template-columns:1fr 1fr}
+  .stat{padding:11px 12px}
+  .stat b{font-size:20px}
+  .stat span{font-size:9.5px}
+  .project{padding:18px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+</style>
+</head>
+<body>
+
+<div class="ticker" aria-hidden="true"><div class="ticker-track">
+  <span>student <i>✦</i> vibe coder <i>✦</i> android + web <i>✦</i> offline first <i>✦</i> no ads <i>✦</i> one-person team <i>✦</i> ships at 2am <i>✦</i></span>
+  <span>student <i>✦</i> vibe coder <i>✦</i> android + web <i>✦</i> offline first <i>✦</i> no ads <i>✦</i> one-person team <i>✦</i> ships at 2am <i>✦</i></span>
+</div></div>
+
+<header><div class="wrap nav">
+  <a class="logo" href="#top"><span class="badge">N</span> nahid<span style="color:#8a8a8a">.dev</span></a>
+  <nav class="nav-links" aria-label="Main">
+    <a href="#projects">projects</a>
+    <a href="#lore">the lore</a>
+    <a href="#stack">stack</a>
+  </nav>
+  <a class="nav-cta" href="https://github.com/nahidsarker771" rel="noopener">github ↗</a>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="wrap">
+  <div class="hero-grid">
+    <div>
+      <span class="sticker">student · vibe coder · app shipper</span>
+      <h1>hi, i'm <span class="hl">Nahid</span>.<br>i build apps <span class="squig">between classes</span>.</h1>
+      <p class="lede">Student by day, vibe coder by night. I make <strong>small, offline-first</strong> Android and web apps that do one thing well — no ads, no accounts, no cloud required.</p>
+      <div class="cta">
+        <a class="btn btn-dark" href="#projects">see the projects ↓</a>
+        <a class="btn btn-lime" href="https://github.com/nahidsarker771" rel="noopener">stalk the github ↗</a>
+      </div>
+    </div>
+    <div>
+      <div class="id-card">
+        <span class="sticker-float sf1">no cap ✦</span>
+        <span class="sticker-float sf2">built different</span>
+        <div class="id-top"><span>student id · 4 real apps</span><span>active</span></div>
+        <div class="id-main">
+          <div class="avatar" aria-hidden="true">:)</div>
+          <div><div class="id-name">Nahid</div><div class="id-role">student / vibe coder / QA department</div></div>
+        </div>
+        <div class="id-rows">
+          <div class="id-row"><span>currently</span><span>shipping side quests</span></div>
+          <div class="id-row"><span>stack</span><span>Kotlin · JS · Capacitor</span></div>
+          <div class="id-row"><span>vibe</span><span>calm UI, chaotic commits</span></div>
+          <div class="id-row"><span>status</span><span>offline &amp; unbothered</span></div>
+        </div>
+        <div class="barcode" aria-hidden="true"></div>
+      </div>
+    </div>
+  </div>
+  <div class="stats">
+    <div class="stat"><b>4</b><span>apps shipped</span></div>
+    <div class="stat"><b>0</b><span>ads or trackers</span></div>
+    <div class="stat"><b>100%</b><span>offline-first</span></div>
+    <div class="stat"><b>1</b><span>person team</span></div>
+  </div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+  <div class="sec-head">
+    <div>
+      <span class="kicker">the portfolio</span>
+      <h2>stuff i actually shipped.</h2>
+      <p>Not dribbble shots. Real APKs, real web apps, real “why is this happening” moments at 2am. All free, all installable right now.</p>
+    </div>
+    <span class="count">04 projects</span>
+  </div>
+
+  <div class="projects">
+    <article class="project" style="--c:var(--pink)">
+      <div class="p-top"><div class="p-ico">🐾</div><span class="p-num">01 / KANAPET</span></div>
+      <h3>KanaPet</h3>
+      <div class="p-tag">learn kana with a pet</div>
+      <p>A hiragana &amp; katakana trainer with a virtual pet, 1,022 cards, 4 offline voice actors and a 45 MB audio pack. Android APK + browser PWA. Mochi is the real MVP.</p>
+      <div class="tags"><span>Android</span><span>PWA</span><span>1,022 cards</span><span>EN + বাংলা</span></div>
+      <div class="p-links">
+        <a class="p-link primary" href="https://nahidsarker771.github.io/kana-pet/">visit site ↗</a>
+        <a class="p-link" href="https://github.com/nahidsarker771/kana-pet/releases/latest/download/KanaPet.apk">APK</a>
+        <a class="p-link" href="https://github.com/nahidsarker771/kana-pet" rel="noopener">code</a>
+      </div>
+    </article>
+
+    <article class="project" style="--c:var(--violet)">
+      <div class="p-top"><div class="p-ico">🧠</div><span class="p-num">02 / RECALLFLOW</span></div>
+      <h3>RecallFlow</h3>
+      <div class="p-tag">study less, remember more</div>
+      <p>An offline spaced-repetition tracker with a 1 → 7 → 16 → 35 day review ladder, a 90-minute focus timer and a calendar that doesn’t fight you. No internet permission at all.</p>
+      <div class="tags"><span>Kotlin</span><span>Compose</span><span>100% offline</span><span>SM-2</span></div>
+      <div class="p-links">
+        <a class="p-link primary" href="https://nahidsarker771.github.io/recall-flow/">visit site ↗</a>
+        <a class="p-link" href="https://github.com/nahidsarker771/recall-flow/releases/latest/download/RecallFlow.apk">APK</a>
+        <a class="p-link" href="https://github.com/nahidsarker771/recall-flow" rel="noopener">code</a>
+      </div>
+    </article>
+
+    <article class="project" style="--c:var(--orange)">
+      <div class="p-top"><div class="p-ico">⬇️</div><span class="p-num">03 / DOWNLOAD CHAN</span></div>
+      <h3>Download Chan</h3>
+      <div class="p-tag">paste. tap. done.</div>
+      <p>The download manager your phone should have shipped with. Clipboard auto-start, 16 parallel connections, social video support and MP3 extraction — all on-device.</p>
+      <div class="tags"><span>Android</span><span>Capacitor</span><span>yt-dlp</span><span>no server</span></div>
+      <div class="p-links">
+        <a class="p-link primary" href="https://nahidsarker771.github.io/download-chan/">visit site ↗</a>
+        <a class="p-link" href="https://github.com/nahidsarker771/download-chan/releases/latest/download/Download-Chan.apk">APK</a>
+        <a class="p-link" href="https://github.com/nahidsarker771/download-chan" rel="noopener">code</a>
+      </div>
+    </article>
+
+    <article class="project" style="--c:var(--sky)">
+      <div class="p-top"><div class="p-ico">⚔️</div><span class="p-num">04 / LIFE QUEST</span></div>
+      <h3>Life Quest</h3>
+      <div class="p-tag">your day, but a game</div>
+      <p>Turn to-dos into daily quests, earn coins, keep a streak and spend them in BDT. 15 themes, ECharts progress, BMI and a dhikr log. One HTML file and a tiny WebView.</p>
+      <div class="tags"><span>Android</span><span>Web app</span><span>Vanilla JS</span><span>682 KB</span></div>
+      <div class="p-links">
+        <a class="p-link primary" href="https://nahidsarker771.github.io/life-quest/">visit site ↗</a>
+        <a class="p-link" href="https://nahidsarker771.github.io/life-quest/app.html">web app</a>
+        <a class="p-link" href="https://github.com/nahidsarker771/life-quest/releases/latest/download/LifeQuest.apk">APK</a>
+      </div>
+    </article>
+  </div>
+</div></section>
+
+<div class="marquee" aria-hidden="true"><div class="marquee-track">
+  <span class="chip dark">kotlin</span><span class="chip">jetpack compose</span><span class="chip">room</span><span class="chip dark">capacitor</span><span class="chip">vanilla js</span><span class="chip">html / css</span><span class="chip dark">github pages</span><span class="chip">yt-dlp</span><span class="chip">ffmpeg</span><span class="chip dark">pwa</span><span class="chip">web audio</span><span class="chip">echarts</span>
+  <span class="chip dark">kotlin</span><span class="chip">jetpack compose</span><span class="chip">room</span><span class="chip dark">capacitor</span><span class="chip">vanilla js</span><span class="chip">html / css</span><span class="chip dark">github pages</span><span class="chip">yt-dlp</span><span class="chip">ffmpeg</span><span class="chip dark">pwa</span><span class="chip">web audio</span><span class="chip">echarts</span>
+</div></div>
+
+<section id="lore"><div class="wrap">
+  <div class="sec-head">
+    <div>
+      <span class="kicker">the lore</span>
+      <h2>how the sausage gets made.</h2>
+      <p>No agency, no team standup, no “circling back”. Just a student, a laptop, and a suspicious number of unfinished tabs.</p>
+    </div>
+  </div>
+  <div class="lore">
+    <div class="note"><span class="tape"></span><span class="emoji">🎓</span><h3>student first</h3><p>Classes, assignments and exams come first. Apps get built in the gaps — which is exactly why they stay small and focused.</p></div>
+    <div class="note"><span class="tape"></span><span class="emoji">🌙</span><h3>vibe coder, not buzzword coder</h3><p>I open the editor, follow the idea, and ship when it feels right. Then I fix the bugs my future self leaves in the comments.</p></div>
+    <div class="note"><span class="tape"></span><span class="emoji">🪫</span><h3>allergic to bloat</h3><p>No login screen for a to-do list. No 40 MB SDK for a button. If a feature doesn’t earn its place, it doesn’t ship.</p></div>
+    <div class="note"><span class="tape"></span><span class="emoji">✈️</span><h3>offline &gt; cloud</h3><p>Every app here works in airplane mode. Your data stays on your device, and “server down” is not a support ticket I have to answer.</p></div>
+    <div class="note"><span class="tape"></span><span class="emoji">🚀</span><h3>ship it, then polish</h3><p>A working v1 beats a perfect v0. I’d rather have four real apps on GitHub than one imaginary startup in a Notion doc.</p></div>
+    <div class="note"><span class="tape"></span><span class="emoji">🫶</span><h3>free means free</h3><p>No ads, no subscriptions, no “pro” pop-up. If you like something, star the repo — that’s the whole business model.</p></div>
+  </div>
+</div></section>
+
+<section id="stack"><div class="wrap">
+  <div class="cta-block">
+    <div>
+      <span class="kicker" style="background:var(--lime);color:var(--ink)">open source</span>
+      <h2>steal my code. <span>it's public.</span></h2>
+      <p>Fork it, break it, learn from it. Every project is on GitHub with the real commits — including the questionable ones.</p>
+    </div>
+    <a class="btn btn-lime" href="https://github.com/nahidsarker771" rel="noopener">github.com/nahidsarker771 ↗</a>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <div class="foot">
+    <div>© 2026 Nahid · student &amp; vibe coder</div>
+    <div class="foot-links">
+      <a href="#projects">projects</a>
+      <a href="https://github.com/nahidsarker771" rel="noopener">github</a>
+      <a href="https://nahidsarker771.github.io/kana-pet/">kanapet</a>
+      <a href="https://nahidsarker771.github.io/recall-flow/">recallflow</a>
+    </div>
+  </div>
+  <div class="small">Built between classes. Powered by tea, stubbornness and GitHub Pages. No cookies, no analytics, no cap.</div>
+</div></footer>
+</body>
+</html>
